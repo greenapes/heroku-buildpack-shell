@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+if [[ -x ${BUILD_DIR}/heroku.build ]]; then
+    echo "shell buildpack"
+    exit 0
+else
+    exit 1
+fi
